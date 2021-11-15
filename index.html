@@ -104,7 +104,7 @@
 
 
         
-        <section id="color1">
+        <section id="color2">
         <h1 id="section1" class="tab">Personal Details</h1>
         
         <div class="container">
@@ -129,33 +129,127 @@
         </div>
         </section>
         
-        <section id="color2">
+        <section id="color1">
         <h1 id="section2" class="tab">Research</h1>
+
+	
+
+        <h4 class="titles">Construction of 3D genome</h4>
+        
+
+	 <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                  Our first goal is to construct a 3D configuration of a chromatin segment using simulation techniques. Recent experimental data (from chromosome conformation capture, 3C/Hi-C/Micro-C) allow us to get the contact frequency map at a resolution as low as 200bp (nucleosome level). We convert this contact frequency map to a contact probability matrix and an interaction energy matrix between all the loci.
+                <p/>
+
+	</div>       
+   
         
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
-        <img src="HiC-input.jpg" class="rounded float-left" alt="shuvadip" width="300">
+                <div class="col-lg-6 col-sm-12">
+        <img src="HiC-input.jpg" class="rounded float-start" alt="HiC-input" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
                 </div>
-                
-                <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-        <img src="potential.jpg" alt="shuvadip" width="300">
-                </div>
-                
-                <div class="col-lg-5 col-sm-12">
-                <p class="big">
-                   I am a student at the Department of Physics, Indian Institue of Technology Bombay. My research interest is Biophysics and the objective is to explain Biological phenomena happening inside cells using tools from Physics. My work involves theoretical modeling as well as extensive computer simulations. My current research work looks into the three-dimensional organization of chromatin inside cells and the nature of dynamics of transcription factors.
-                <p/>
+                <div class="col-lg-6 col-sm-12">
+        <img src="potential.jpg" class="rounded float-end" alt="potential" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
                 </div>
             </div>
         </div>
+
+        <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                   Using molecular dynamics package LAMMPS, we simulate a bead-spring polymer via Langevin dynamics taking constructed interaction matrix as an input for inter-loci LJ interaction strength. Once equilibrated, we extract an ensemble of uncorrelated polymer configurations in 3D. We analyze the 3D structures and use them in various cases.
+                <p/>
+
+	</div>
+
+
+	 <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="final_configuration.jpg" class="rounded float-start" alt="final_configuration" width="300" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+        <img src="simulated_contact_map.jpg" class="rounded float-end" alt="simulated_contact_map" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+            </div>
+        </div>
+
+
+	<div class="col-lg-12 col-sm-12">
+                <p class="big">
+                   Presently, we put attractive LJ potential between the beads with a cut-off at 1.5\sigma. Hence, the polymer forms small clusters, but the current strategy fails to form long-range contacts. We are planning to introduce new interaction acting, especially between far-away beads. We expect this modification will help us to capture contact frequencies at all ranges.
+                <p/>
+
+	</div>
+
+
+
+
+	  <h4 class="titles">Dynamics of transcription factors</h4>
+        
+
+	 <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                  Transcription factors (TF) are proteins that bind to a target site on chromatin and orchestrate transcription. We try to model the interphase chromatin as a network where each bead of the simulated polymer acts as a node and the TF as an unbiased random walker, hopping to other nodes in the neighborhood. From existing literature on the network, it is known that the mean first passage time (MFPT) of a random walker between any two nodes on a general network follows a set of particular scaling laws.
+                <p/>
+
+	</div>       
+   
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="HiC-input.jpg" class="rounded float-start" alt="HiC-input" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+        <img src="potential.jpg" class="rounded float-end" alt="potential" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                <li> Our main goal is to verify whether the MFPT scaling law (for a network) holds in the chromatin context, i.e., the possibility of characterizing the MFPT of a TF based on walk dimension and fractal dimension of chromatin mesh.</li>
+
+		<li>The biologically relevant question is, if a TF is stuck inside a wrong TAD (chromatin mesh with no target site), how long it would take to come out of it. In other words, we are trying to figure out the dependence of mean exit time from a TAD on the size of the domain (radius of gyration) and structure of this domain.</li>
+
+		<li>It is now well accepted that chromatin are dynamic polymers. This dynamic nature arises due to the tethering of chromatin to the nuclear lamina, the interplay of interactions with various proteins, and the dynamic loop extrusion process via cohesin.Previous works show that the performance of a random walker (walking on polymer) is increased if the polymer has its dynamics. The mean square displacement of a random walker along a static polymer shows only diffusive behavior, whereas polymer dynamics can make the walk superdiffusive. It will be interesting to see whether chromatin dynamics can reduce the TF's mean target search time (or mean exit time from a TAD).</li>
+                <p/>
+
+	</div>
+
+
+	 <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="final_configuration.jpg" class="rounded float-start" alt="final_configuration" width="300" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+        <img src="simulated_contact_map.jpg" class="rounded float-end" alt="simulated_contact_map" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+            </div>
+        </div>
+
+
+	<div class="col-lg-12 col-sm-12">
+                <p class="big">
+                <li>Effect of collapsed structure: Chromatin is a collapsed polymer and it makes frequent contact with itself. TF can jump to distant loci if there are contacts between far-away loci. We constructed an artificial domain where each locus is making contacts with other loci with a constant probability. Mean exit time from the domain for a random walker shows a non-monotonic behavior. If the contact probability is small, the walk is only along the 1D chain and can not hop to distant loci. Again, if contact probability is very high, there are too many contacts for each locus and the walker takes more time to reach the domain boundary.</li>
+
+		<li>Exit time analysis: We constructed an ensemble of connectivity matrices (C<sub>ij</sub>) (with entries 1 and 0) for a region on human chromosome 7 according to the available Hi-C contact matrix. A random walker was allowed to walk on the network following the connectivity matrix (i.e. only if C<sub>ij</sub>=1, jump is allowed between i and j ). The chosen region consists a TAD and we calculated exit time distribution. Simulation have shown that total mean exit time from a bigger domain is less than sum of mean exit times from the sub-domains.</li>
+
+		<li>Exit time scaling: We collected more TAD structures from the Hi-C map in order to find out a proper scaling of mean exit times with TAD lengths.</li>
+
+		<li>Finite-size of the TAD: As discussed earlier, Our goal is to calculate mean exit time scaling with the size of the domain. However, the actual TAD size varies in the range 0.5Mbp to 2Mbp. Hence, getting a scaling law remains a challenge with the available data.</li>
+                <p/>
+
+	</div>
+
         </section>
         
         
         
-        <section id="color1">
+        <section id="color2">
         <h1 id="section3" class="tab">Education</h1>
         
         <div class="container">
@@ -233,7 +327,7 @@
         </section>
            
    
-        <section id="color2">
+        <section id="color1">
         <h1 id="section4" class="longtab">Research Experience</h1>
                 
         <div class="container">
@@ -270,7 +364,7 @@ noise on random motility</h5></a>
         </section>
         
         
-        <section id="color1">
+        <section id="color2">
         <h1 id="section5" class="longtab">Teaching Experience</h1>
          
             
@@ -330,7 +424,7 @@ conducted exams and evaluated their answer sheets.</a>
         
         
                 
-        <section id="color2">
+        <section id="color1">
         <h1 id="section6" class="tab">Skills</h1>
         <div class="container">
             <div class="row">
@@ -362,7 +456,7 @@ conducted exams and evaluated their answer sheets.</a>
         </section>
         
         
-         <section id="color1">
+         <section id="color2">
         <h1 id="section7" class="longtab">Courses(after MSc)</h1>
         <div class="container">
             <div class="row">
@@ -388,7 +482,7 @@ conducted exams and evaluated their answer sheets.</a>
         </div>
         </section>
         
-        <section id="color2">
+        <section id="color1">
         <h1 id="section8" class="longtab">Course Projects</h1>
                 
         <div class="container">
@@ -433,7 +527,7 @@ spatially inhomogeneous diffusion coefficient</h5></a>
         </section>
         
         
-          <section id="color1">
+          <section id="color2">
         <h1 id="section9" class="tab">Achievements</h1>
         <div class="container">
             <div class="row">
@@ -455,7 +549,7 @@ spatially inhomogeneous diffusion coefficient</h5></a>
         
         
                 
-        <section id="color2">
+        <section id="color1">
         <h1 id="section10" class="tab">Contact</h1>
         <div class="container">
             <div class="row">
