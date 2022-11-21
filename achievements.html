@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shuvadip Dutta</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+              // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+   
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+            });
+            } // End if
+            });
+            });
+            
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+    </head>
+    
+    
+    <body>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+        
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Shuvadip Dutta</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+  
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Personal Details</a>
+                </li>
+                 <li class="nav-item active">
+                    <a class="nav-link" href="research.html">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section4">Research Experience</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#section5">Teaching Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section6">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section7">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section8">Course Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section9">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section10">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+        
+        <section id="color2">
+        <h1 id="section1" class="tab">Personal Details</h1>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+        <img src="shuvadipdutta.png" class="rounded float-left" alt="shuvadip" width="170">
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <ul class="info">
+                      <li><b>Name        :</b> Shuvadip Dutta</li>
+                      <li><b>Nationality :</b> Indian</li>
+                      <li><b>Phone       :</b> +91 8777642952</li>
+                      <li><b>Email       :</b> shuvadipdutta@gmail.com</li>
+                    </ul> 
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                <p class="big">
+                   I am a student at the Department of Physics, Indian Institue of Technology Bombay. My research interest is Biophysics and the objective is to explain Biological phenomena happening inside cells using tools from Physics. My work involves theoretical modeling as well as extensive computer simulations. My current research work looks into the three-dimensional organization of chromatin inside cells and the nature of dynamics of transcription factors.
+                <p/>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <section id="color1">
+        <h1 id="section2" class="tab">Research</h1>
+
+	
+
+        <h4 class="titles">Construction of 3D genome</h4>
+        
+
+	 <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                  Our first goal is to construct a 3D configuration of a chromatin segment using simulation techniques. Recent experimental data (from chromosome conformation capture, 3C/Hi-C/Micro-C) allow us to get the contact frequency map at a resolution as low as 200bp (nucleosome level). We convert this contact frequency map to a contact probability matrix and an interaction energy matrix between all the loci.
+                <p/>
+
+	</div>       
+   
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="HiC-input.jpg" class="rounded float-start" alt="HiC-input" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+        <img src="potential.jpg" class="rounded float-end" alt="potential" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                   Using molecular dynamics package LAMMPS, we simulate a bead-spring polymer via Langevin dynamics taking constructed interaction matrix as an input for inter-loci LJ interaction strength. Once equilibrated, we extract an ensemble of uncorrelated polymer configurations in 3D. We analyze the 3D structures and use them in various cases.
+                <p/>
+
+	</div>
+
+
+	 <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="final_configuration.jpg" class="rounded float-start" alt="final_configuration" width="300" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+        <img src="simulated_contact_map.jpg" class="rounded float-end" alt="simulated_contact_map" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+            </div>
+        </div>
+
+
+	<div class="col-lg-12 col-sm-12">
+                <p class="big">
+                   Presently, we put attractive LJ potential between the beads with a cut-off at 1.5\sigma. Hence, the polymer forms small clusters, but the current strategy fails to form long-range contacts. We are planning to introduce new interaction acting, especially between far-away beads. We expect this modification will help us to capture contact frequencies at all ranges.
+                <p/>
+
+	</div>
+
+
+	 <hr style="border: 1px solid #000000;" />
+
+	  <h4 class="titles">Dynamics of transcription factors</h4>
+        
+
+	 <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                  Transcription factors (TF) are proteins that bind to a target site on chromatin and orchestrate transcription. We try to model the interphase chromatin as a network where each bead of the simulated polymer acts as a node and the TF as an unbiased random walker, hopping to other nodes in the neighborhood. From existing literature on the network, it is known that the mean first passage time (MFPT) of a random walker between any two nodes on a general network follows a set of particular scaling laws.
+                <p/>
+
+	</div>       
+   
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="exit_time_from_domain.jpg" class="rounded float-end" alt="exit_time_from_domain" width="700" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                <li> Our main goal is to verify whether the MFPT scaling law (for a network) holds in the chromatin context, i.e., the possibility of characterizing the MFPT of a TF based on walk dimension and fractal dimension of chromatin mesh.</li>
+
+		<li>The biologically relevant question is, if a TF is stuck inside a wrong TAD (chromatin mesh with no target site), how long it would take to come out of it. In other words, we are trying to figure out the dependence of mean exit time from a TAD on the size of the domain (radius of gyration) and structure of this domain.</li>
+
+		<li>It is now well accepted that chromatin are dynamic polymers. This dynamic nature arises due to the tethering of chromatin to the nuclear lamina, the interplay of interactions with various proteins, and the dynamic loop extrusion process via cohesin.Previous works show that the performance of a random walker (walking on polymer) is increased if the polymer has its dynamics. The mean square displacement of a random walker along a static polymer shows only diffusive behavior, whereas polymer dynamics can make the walk superdiffusive. It will be interesting to see whether chromatin dynamics can reduce the TF's mean target search time (or mean exit time from a TAD).</li>
+                <p/>
+
+	</div>
+
+
+	 <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="exit_times.png" class="rounded float-start" class="center" alt="exit times" width="1200" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+	<div class="col-lg-12 col-sm-12">
+                <p class="big">
+                <li>Effect of collapsed structure: Chromatin is a collapsed polymer and it makes frequent contact with itself. TF can jump to distant loci if there are contacts between far-away loci. We constructed an artificial domain where each locus is making contacts with other loci with a constant probability. Mean exit time from the domain for a random walker shows a non-monotonic behavior. If the contact probability is small, the walk is only along the 1D chain and can not hop to distant loci. Again, if contact probability is very high, there are too many contacts for each locus and the walker takes more time to reach the domain boundary.</li>
+
+		<li>Exit time analysis: We constructed an ensemble of connectivity matrices (C<sub>ij</sub>) (with entries 1 and 0) for a region on human chromosome 7 according to the available Hi-C contact matrix. A random walker was allowed to walk on the network following the connectivity matrix (i.e. only if C<sub>ij</sub>=1, jump is allowed between i and j ). The chosen region consists a TAD and we calculated exit time distribution. Simulation have shown that total mean exit time from a bigger domain is less than sum of mean exit times from the sub-domains.</li>
+
+		<li>Exit time scaling: We collected more TAD structures from the Hi-C map in order to find out a proper scaling of mean exit times with TAD lengths.</li>
+
+		<li>Finite-size of the TAD: As discussed earlier, Our goal is to calculate mean exit time scaling with the size of the domain. However, the actual TAD size varies in the range 0.5Mbp to 2Mbp. Hence, getting a scaling law remains a challenge with the available data.</li>
+                <p/>
+
+	</div>
+
+	 <hr style="border: 1px solid #000000;" />
+
+  <h4 class="titles">Recombination</h4>
+        
+
+	 <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                  One of the major reasons for the diversity of living beings is the biological process of recombination—two parts of the broken DNA meet together and exchange. This phenomenon can give rise to entirely new species during evolution. What is the rate of recombination has been an important question historically. Since chromatin is a polymer and recombination requires the physical proximity of two chromatin segments, this question cannot be entirely answered until we incorporate the chromatin 3D organization into our calculations. Recent advances in experimental techniques have led to new chromatin conformation capture experiments (3C, Hi-C). It provides us the probability that two chromatin segments are in contact. We plan to use this and predict the recombination frequency under various conditions.
+                <p/>
+
+	</div>       
+   
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="recombination.jpg" class="rounded float-start" alt="recombination" width="500" style="padding-right: 50px; padding left: 50px; padding top: 3000px; padding bottom: 200px;">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+        <img src="recombination_snap.png" class="rounded float-end" alt="snapshot" width="400" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                   Our questions: what is the probability that two loci (with the same sequence identity) from two different chromatin come into the vicinity and recombine: 
+
+		<li>If chromatin is modeled as a random walk polymer.</li>
+
+		<li>If chromatin is modeled as a self-avoiding walk (SAW) polymer.</li>
+
+		<li>If chromatin is modeled as a compact polymer with similar folding as seen in experimental data.</li> 
+
+The first two cases are control scenarios that allow us to analyze the effect of the specific organization of chromatin on the recombination process. Moreover, searching for another exact copy of chromatin segment requires extensive scanning. However, the process takes only tens of minutes to a few hours. To explain the surprisingly fast time-scale of recombination, one may need to introduce new interactions. Also, dependence on the length of the chromosome can be interesting to study.
+                <p/>
+
+	</div>
+
+	 <hr style="border: 1px solid #000000;" />
+
+ <h4 class="titles">Chromatin organisation at different stage of cell cycle</h4>
+        
+
+	 <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                  The interphase stage of the cell cycle is divided into three parts: G1, S and G2. The organization of chromatin is very different in these stages. Recently, we have the experimental data for one of the species of Yeast (in the form of Hi-C), which also shows variability in the organization across different stages of the cell cycle. 
+                <p/>
+
+	</div>       
+   
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="IMG_0037.jpg" class="rounded float-start" alt="potential matrix" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+        <img src="IMG_0039.jpg" class="rounded float-end" alt="simulated contact map" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                <li>We want to model interphase chromatin at different points of interphase using our technique discussed earlier and we want to see whether our polymer model can capture the essential features of organizations.</li>
+
+		<li>We also want to compare the volume and shape of chromatin with the results from experiments.</li>
+
+		<li>Another aspect of this project is to predict a possible pathway through which chromatin reaches G1 to G2 during a cell cycle.</li>
+                <p/>
+
+	</div>
+
+
+	 <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="IMG_0038.jpg" class="rounded float-start" alt="snapshot" width="300" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+        <img src="IMG_0041.jpg" class="rounded float-end" alt="radius of gyration" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+                </div>
+            </div>
+        </div>
+
+        </section>
+        
+        
+        
+        <section id="color2">
+        <h1 id="section3" class="tab">Education</h1>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>2020-Current</h5>
+                <h6>Research Fellow</h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="http://www.iitb.ac.in"><h5>Indian Institute of Technology Bombay</h5></a>
+                  <a class="link" href="https://www.phy.iitb.ac.in/"><h5>Department of Physics</h5></a>
+                   <b>Supervisors:</b> <a class="link" href="https://www.phy.iitb.ac.in/en/faculty/mithun">Prof. Mithun Kumar Mitra, </a> <a class="link" href="https://www.bio.iitb.ac.in/~ranjith/">Prof. Ranjith Padinhateeri </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <hr style="border: 2px solid #f2f2f2;" />
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>2017-2019</h5>
+                <h6>MSc in Physics</h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="https://www.iitm.ac.in/"><h5>Indian Institute of Technology Madras</h5></a>
+                  <a class="link" href="https://physics.iitm.ac.in/"><h5>Department of Physics</h5></a>
+                </div>
+            </div>
+        </div>
+            
+            
+        <hr style="border: 2px solid #f2f2f2;" />
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>2014-2017</h5>
+                <h6>BSc(H) in Physics</h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="http://vidyamandira.ac.in/"><h5>Ramakrishna Mission Vidyamandira, Belur math</h5></a>
+                    <a>Department of Physics</a>
+                </div>
+            </div>
+        </div>
+        
+        <hr style="border: 2px solid #f2f2f2;" />
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>2012-2014</h5>
+                <h6><b>Higher Secondary</b></h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <h5>Mahesh Sri Ramakrishna Ashram Vidyalaya</h5>
+                  
+                </div>
+            </div>
+        </div>
+        
+        
+        <hr style="border: 2px solid #f2f2f2;" />
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>1999-2012</h5>
+                <h6><b>Secondary</b></h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <h5>Mahesh Sri Ramakrishna Ashram Vidyalaya</h5>
+                </div>
+            </div>
+        </div>
+        </section>
+           
+   
+        <section id="color1">
+        <h1 id="section4" class="longtab">Research Experience</h1>
+                
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>MSc Thesis</h5>
+                <h6><b>IIT Madras (July 2018-May 2019)</b></h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="https://drive.google.com/file/d/15KDDnUafxvt8cGM2ObnpQaTfalSgh1U3/view?usp=sharing"><h5>Run and Tumble walk of E.coli : Impact of signalling
+
+noise on random motility</h5></a>
+                  <b>Supervisor:</b> <a class="link" href="https://physics.iitm.ac.in/manojgopal">Prof. Manoj Gopalakrishnan</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <hr style="border: 2px solid #f2f2f2;" />
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>Summer Internship</h5>
+                <h6><b>SINP Kolkata (May 2018-July 2018)</b></h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="https://drive.google.com/file/d/19UPBZMwgs97OMMRDFj9O-1CQUySaXarQ/view?usp=sharing"><h5>A Short Study on Stochastic Processes</h5></a>
+                  <b>Supervisor:</b> <a class="link" href="http://saha.ac.in/web/tcmpd-personal-page?mid=97&tab=tab1">Prof. Pradeep Kr. Mohanty</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        </section>
+        
+        
+        <section id="color2">
+        <h1 id="section5" class="longtab">Teaching Experience</h1>
+
+	      <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>UM-DAE CEBS, Mumbai (August 2022-)</h5>
+                <h6> <b>Instructor:</b> <a class="link" href="https://sudhirrjain.wordpress.com/contact/">Prof. Sudhir R. Jain</a></h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href=""><h5>Physics-1</h5></a>
+                  <b>Teaching assistant</b> <a>Weekly class of 1 hour</a>
+                </div>
+            </div>
+        </div>
+         
+
+ 	<hr style="border: 2px solid #f2f2f2;" />
+
+	     <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>NPTEL (July 2022-)</h5>
+                <h6> <b>Instructor:</b> <a class="link" href="https://sites.google.com/iitr.ac.in/msdd/prateek">Prof. Prateek K. Jha</a></h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="https://onlinecourses.nptel.ac.in/noc22_ch62/preview"><h5>Introduction to Polymer Physics(noc22-ch62)</h5></a>
+                  <b>Teaching assistant</b> <a>Weekly tutorial discussion</a>
+                </div>
+            </div>
+        </div>
+         
+
+ 	<hr style="border: 2px solid #f2f2f2;" />
+
+
+             <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>UM-DAE CEBS, Mumbai (February 2022-May 2022)</h5>
+                <h6> <b>Instructor:</b> <a class="link" href="http://www.dipanghosh.com/">Prof. Dipan Ghosh</a></h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="http://www.dipanghosh.com/classical-mechanics"><h5>Classical Mechanics</h5></a>
+                  <b>Teaching assistant</b> <a>Weekly assignment preparation,Tutorial discussion and evaluation of answer sheets.</a>
+                </div>
+            </div>
+        </div>
+        
+            
+            
+        <hr style="border: 2px solid #f2f2f2;" />
+
+
+
+             <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>UM-DAE CEBS, Mumbai (October 2021-January 2022)</h5>
+                <h6> <b>Instructor:</b> <a class="link" href="http://www.dipanghosh.com/">Prof. Dipan Ghosh</a></h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="http://www.dipanghosh.com/nonlinear-dynamics"><h5>Non-linear Dynamics</h5></a>
+                  <b>Teaching assistant</b> <a>Weekly assignment preparation,Tutorial discussion and evaluation of answer sheets.</a>
+                </div>
+            </div>
+        </div>
+        
+            
+            
+        <hr style="border: 2px solid #f2f2f2;" />
+        
+            
+            
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>IIT Bombay (September 2021-December 2021)</h5>
+                 <h6> <b>Instructor:</b> <a class="link" href="https://www.phy.iitb.ac.in/en/faculty/mithun">Prof. Mithun Kumar Mitra</a></h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="https://www.cdeep.iitb.ac.in/slides/A19/PH549/"><h5>PH 549: Physics of Biological Systems</h5></a>
+                  <b>Teaching assistant</b> <a>Assignment preparation and evaluation of answer sheets.</a>
+                </div>
+            </div>
+        </div>
+        
+            
+            
+        <hr style="border: 2px solid #f2f2f2;" />
+            
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>IIT Bombay (March 2021-August 2021)</h5>
+                 <h6> <b>Instructor:</b> <a class="link" href="https://www.phy.iitb.ac.in/en/employee-profile/raghunath-chelakkot">Prof. Raghunath Chelakkot</a></h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a><h5>PH 108:Electricity and Magnetism</h5></a>
+                  <b>Teaching assistant</b> <a>Academically mentored 43 students, prepared weekly assignments, solved doubts,
+conducted exams and evaluated their answer sheets.</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        </section>
+        
+        
+        
+                
+        <section id="color1">
+        <h1 id="section6" class="tab">Skills</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                <h4>Programming Skills</h4>
+                    <ul class="info">
+                        <li>C language</li>
+                    </ul> 
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                <h4>Simulation Skills</h4>
+                    <ul class="info">
+                      <li>Monte Carlo</li>
+                      <li>Kinetic Monte Carlo</li>
+                      <li>Molecular dynamics</li>
+                    </ul> 
+                </div>
+                 <div class="col-lg-6 col-sm-6">
+                 <h4>Software Knowledge</h4>
+                    <ul class="info">
+                      <li>Mathematica</li>
+                      <li>Matlab</li>
+                      <li>LAMMPS</li>
+                      <li>VMD</li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        
+         <section id="color2">
+        <h1 id="section7" class="longtab">Courses(after MSc)</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                <h4>In IIT Bombay</h4>
+                    <ul class="info">
+			<li>PH 543:Advanced Statistical Mechanics(2020)</li>
+                        <li>PH 549:Physics of Biological Systems(2020)</li>
+                        <li>PH 543:Advanced Statistical Mechanics(2020)</li>
+                        <li>PH 567:Non-linear Dynamics(2020)</li>
+                        <li>PH 550:Soft Matter Physics(2020)</li>
+                        <li>PH 562:Continuum Mechanics(2020)</li>
+                    </ul> 
+                </div>
+               
+                 <div class="col-lg-6 col-sm-6">
+                 <h4>Other than IITB courses</h4>
+                    <ul class="info">
+                      <li>Using Python for Research(2021, Online course via edx)</li>
+                      <li>Introduction to Linux(2021, Online course via edx)</li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <section id="color1">
+        <h1 id="section8" class="longtab">Course Projects</h1>
+                
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>PH 549:Physics of Biological Systems</h5>
+                <h6>IIT Bombay (2020)</h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="https://drive.google.com/file/d/1nNMm8O43jmLlnzyQFxkEQ4oNWotLPUaS/view?usp=sharing"><h5>Organelle biogenesis processes and cell to cell variability of organelle</h5></a>
+                </div>
+            </div>
+        </div>
+        
+        <hr style="border: 2px solid #f2f2f2;" />
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>PH 567:Non-linear Dynamics</h5>
+                <h6>IIT Bombay (2020)</h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="https://drive.google.com/file/d/12Ho1QXNYMQ5RRYxfpT5MWZX1n4qijj_p/view?usp=sharing"><h5>Pattern formation in reaction-diffusion models with
+spatially inhomogeneous diffusion coefficient</h5></a>
+                </div>
+            </div>
+        </div>
+
+ <hr style="border: 2px solid #f2f2f2;" />
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                <h5>PH 543:Advanced Statistical Mechanics</h5>
+                <h6>IIT Bombay (2020)</h6>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <a class="link" href="https://drive.google.com/file/d/1LKurajUjFghWnMLK_ZviKFdwPvvrvqdy/view?usp=sharing"><h5>Series expansion method and duality transformation</h5></a>
+                </div>
+            </div>
+        </div>
+        
+        </section>
+        
+        
+          <section id="color2">
+        <h1 id="section9" class="tab">Achievements</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <ul class="info">
+                        <li><a class="link" href="https://may2021.pmrf.in/"><h5>Prime Minister's Research Fellowship (2021)</h5></a></li>
+                         <li><a class="link" href="https://online-inspire.gov.in/"><h5>PhD Fellowship offer from DST-INSPIRE(2019)</h5></a></li>
+                         <li><a class="link" href="https://online-inspire.gov.in/"><h5>DST INSPIRE Scholar (2014-19)</h5></a></li>
+                        <li><a class="link" href="https://www.iapt.org.in/exams/nse/ngpe.html"><h5>National Graduate Physics Examination (by IAPT) - National Top-25 (2017)</h5></a></li>
+                         <li><a class="link" href="https://ncert.nic.in/national-talent-examination.php"><h5>NTSE Scholar (by NCERT) (2010)</h5></a></li>
+                        
+                        
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        
+        
+                
+        <section id="color1">
+        <h1 id="section10" class="tab">Contact</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                <h4>Address</h4>
+                   <p class="big">
+                         Physical Biology lab
+                         306, Department of Bioscience and Bioengineering,
+                         Indian Institute of Technology Bombay,
+                         Powai, Mumbai 400 076, Maharashtra, India
+                   <p/>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                <h4>Phone</h4>
+                  +91 8777642952
+                </div>
+            </div>
+        </div>
+            
+        <hr style="border: 2px solid #f2f2f2;" />
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                <h4>Email</h4>
+                  <a href="mailto:shuvadipdutta@gmail.com" target="_top">shuvadipdutta@gmail.com</a> <br />
+                  <a href="mailto:194120015@iitb.ac.in" target="_top">194120015@iitb.ac.in</a>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                <h4>I am also on social networks</h4>
+<!-- Add font awesome icons -->
+                <a href="https://www.facebook.com/shuvadip.dutta.7/" class="fa fa-facebook"></a>
+                <a href="https://mobile.twitter.com/DuttaShuvadip" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/shuvadip-dutta-693912a9/" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/itshuvadip/" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 2px solid #f2f2f2;" />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5330.790515172766!2d72.9134066123854!3d19.13229006439018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68fdcea4c5c5894e!2sIndian+Institute+of+Technology+Bombay!5e0!3m2!1sen!2sin!4v1530867751597" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+   
+        </section>
+  
+        
+        <section id="color3">
+    <div class="footer-copyright text-center py-3">Copyright © 2021 :
+      <a href="https://shuvadipd.github.io"> Shuvadip Dutta.</a>All rights reserved.
+    </div>
+        </section>
+        
+        
+        
+    </body>
+</html>
+
