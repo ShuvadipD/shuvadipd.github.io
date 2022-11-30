@@ -90,59 +90,9 @@
 
 	
 
-        <h4 class="titles">Construction of 3D genome</h4>
-        
+       
 
-	 <div class="col-lg-12 col-sm-12">
-                <p class="big">
-                  Our first goal is to construct a 3D configuration of a chromatin segment using simulation techniques. Recent experimental data (from chromosome conformation capture, 3C/Hi-C/Micro-C) allow us to get the contact frequency map at a resolution as low as 200bp (nucleosome level). We convert this contact frequency map to a contact probability matrix and an interaction energy matrix between all the loci.
-                <p/>
-
-	</div>       
-   
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-        <img src="HiC-input.jpg" class="rounded float-start" alt="HiC-input" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
-                </div>
-                <div class="col-lg-6 col-sm-12">
-        <img src="potential.jpg" class="rounded float-end" alt="potential" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-12 col-sm-12">
-                <p class="big">
-                   Using molecular dynamics package LAMMPS, we simulate a bead-spring polymer via Langevin dynamics taking constructed interaction matrix as an input for inter-loci LJ interaction strength. Once equilibrated, we extract an ensemble of uncorrelated polymer configurations in 3D. We analyze the 3D structures and use them in various cases.
-                <p/>
-
-	</div>
-
-
-	 <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-        <img src="final_configuration.jpg" class="rounded float-start" alt="final_configuration" width="300" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
-                </div>
-                <div class="col-lg-6 col-sm-12">
-        <img src="simulated_contact_map.jpg" class="rounded float-end" alt="simulated_contact_map" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
-                </div>
-            </div>
-        </div>
-
-
-	<div class="col-lg-12 col-sm-12">
-                <p class="big">
-                   Presently, we put attractive LJ potential between the beads with a cut-off at 1.5\sigma. Hence, the polymer forms small clusters, but the current strategy fails to form long-range contacts. We are planning to introduce new interaction acting, especially between far-away beads. We expect this modification will help us to capture contact frequencies at all ranges.
-                <p/>
-
-	</div>
-
-
-	 <hr style="border: 1px solid #000000;" />
-
-	  <h4 class="titles">Dynamics of transcription factors</h4>
+	  <h4 class="titles">Spatial Organisation of Chromatin and Dynamics of Transcription Factors</h4>
         
 
 	 <div class="col-lg-12 col-sm-12">
@@ -153,13 +103,7 @@
 	</div>       
    
         
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-        <img src="exit_time_from_domain.jpg" class="rounded float-end" alt="exit_time_from_domain" width="700" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
-                </div>
-            </div>
-        </div>
+       
 
         <div class="col-lg-12 col-sm-12">
                 <p class="big">
@@ -176,7 +120,7 @@
 	 <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
-        <img src="exit_times.png" class="rounded float-start" class="center" alt="exit times" width="1200" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
+        <img src="fpt.png" class="rounded float-start" class="center" alt="exit times" width="1200" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
                 </div>
                 </div>
             </div>
@@ -197,6 +141,86 @@
 	</div>
 
 	 <hr style="border: 1px solid #000000;" />
+
+
+ <h4 class="titles">Investigating the role of Lamin interactions in regulating chromatin organisation</h4>
+        
+
+	 <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                 Lamins are principal nucleoskeletal proteins of all mammalian cells, which impart rigidity to nuclear morphology and ensure the resilience
+of the nucleus by forming filamentous meshwork under the inner nuclear membrane, called nuclear lamina [1]. Over the recent years,
+mutations in lamins have been found to cause a cluster of human diseases, collectively termed laminopathies (e.g., dilated cardiomyopathy
+(DCM) [1], Hutchinson–Gilford progeria syndrome [2] etc.). One of the significant features of such mutations is the abrupt disappearance
+of the nuclear lamina and the formation of multiple lamin aggregates in the nucleoplasm. In this study, we perform coarse-grained
+simulations (using LAMMPS) of a small region near the membrane of the nucleus to investigate the role of interactions between different
+nuclear components (chromatin, lamin and nuclear membrane) in WT cells and possible changes in those interactions which can lead to
+a mutant configurations.
+                <p/>
+
+	</div>       
+   
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="lamin.png" class="rounded float-start" alt="recombination" width="1000" style="padding-right: 50px; padding left: 50px; padding top: 3000px; padding bottom: 200px;">
+             
+            </div>
+        </div>
+
+
+
+
+       
+	 <hr style="border: 1px solid #000000;" />
+
+
+	<h4 class="titles">Improved chromatin models using systematic coarse-graining data</h4>
+        
+
+	 <div class="col-lg-12 col-sm-12">
+                <p class="big">
+                  Coarse-grained chromatin models are essential to interpret various experimental observations and predicting physical principles behind
+chromatin organization. Most existing polymer models consider chromatin as an array of beads connected by springs. Each bead
+represents chromatin segments of genomic length 1 kbp to 1 Mbp (depending on the context). Models also assume various polymer
+properties as input, such as the spring constant of the connecting spring between beads, bending rigidity, coarse-grained bead sizes,
+equilibrium bond lengths between neighboring beads, equilibrium angles between three consecutive beads etc. In a recent study, using
+extensive simulations, we have predicted these quantities essential for the polymer representation of chromatin.
+                <p/>
+
+	</div>       
+   
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+        <img src="microc.png" class="rounded float-start" alt="recombination" width="1200" style="padding-right: 50px; padding left: 50px; padding top: 3000px; padding bottom: 200px;">
+                </div>
+              
+            </div>
+        </div>
+
+
+
+
+        <div class="col-lg-12 col-sm-12">
+               
+
+Modeling chromatin as a FRC polymer
+Using the distribution of bond angles and bond lengths from systematic coarse-graining, we ask whether chromatin-like polymer config-
+urations can be generated by incorporating these coarse-grained parameters into simple polymer models. We construct a freely rotating
+chain (FRC) polymer using these parameters. We show that while it is possible to generate TAD-like domains as seen from the FRC
+model, and also the average 3D distance between the same genomic loci matches with experimentally observed values, there is a significant
+deviation of the scaling of the radius of gyration with the genomic length for this FRC polymer from experimentally observed data. This
+disagreement indicates that “only” heterogeneous bond lengths and angles are not sufficient to model chromatin segments, and we must
+construct polymer models incorporating the effects of soft interaction potential and sequence heterogeneity
+                <p/>
+
+	</div>
+
+	 <hr style="border: 1px solid #000000;" />
+
 
   <h4 class="titles">Recombination</h4>
         
@@ -240,50 +264,7 @@ The first two cases are control scenarios that allow us to analyze the effect of
 
 	 <hr style="border: 1px solid #000000;" />
 
- <h4 class="titles">Chromatin organisation at different stage of cell cycle</h4>
-        
 
-	 <div class="col-lg-12 col-sm-12">
-                <p class="big">
-                  The interphase stage of the cell cycle is divided into three parts: G1, S and G2. The organization of chromatin is very different in these stages. Recently, we have the experimental data for one of the species of Yeast (in the form of Hi-C), which also shows variability in the organization across different stages of the cell cycle. 
-                <p/>
-
-	</div>       
-   
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-        <img src="IMG_0037.jpg" class="rounded float-start" alt="potential matrix" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
-                </div>
-                <div class="col-lg-6 col-sm-12">
-        <img src="IMG_0039.jpg" class="rounded float-end" alt="simulated contact map" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-12 col-sm-12">
-                <p class="big">
-                <li>We want to model interphase chromatin at different points of interphase using our technique discussed earlier and we want to see whether our polymer model can capture the essential features of organizations.</li>
-
-		<li>We also want to compare the volume and shape of chromatin with the results from experiments.</li>
-
-		<li>Another aspect of this project is to predict a possible pathway through which chromatin reaches G1 to G2 during a cell cycle.</li>
-                <p/>
-
-	</div>
-
-
-	 <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-        <img src="IMG_0038.jpg" class="rounded float-start" alt="snapshot" width="300" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
-                </div>
-                <div class="col-lg-6 col-sm-12">
-        <img src="IMG_0041.jpg" class="rounded float-end" alt="radius of gyration" width="500" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
-                </div>
-            </div>
-        </div>
 
         </section>
 
