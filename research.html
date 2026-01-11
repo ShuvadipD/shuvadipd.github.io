@@ -1,322 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Shuvadip Dutta</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research | Shuvadip Dutta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+<body>
 
-              // Store hash
-            var hash = this.hash;
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="talks.html">Talks</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-   
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-            });
-            } // End if
-            });
-            });
-            
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
+<section>
+  <h2>Current Research</h2>
+  <p>
+    My current research investigates the three-dimensional organisation of
+    chromatin and its role in regulating the dynamics of transcription factors
+    and DNA repair proteins. I use coarse-grained polymer models, Monte Carlo
+    simulations, and theoretical analysis to understand nuclear architecture
+    and its functional consequences.
+  </p>
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
+  <h2>Research Experience</h2>
+  <ul>
+    <li>
+      <strong>Chromatin Organisation and Protein Dynamics</strong><br>
+      PhD Research, IIT Bombay (2020 – Present)<br>
+      Supervisors: Prof. Mithun Mitra, Prof. Ranjith Padinhateeri
+    </li>
+    <li>
+      <strong>Run and Tumble Walk of <em>E. coli</em></strong><br>
+      MSc Thesis, IIT Madras (2018–2019)<br>
+      Supervisor: Prof. Manoj Gopalakrishnan
+    </li>
+    <li>
+      <strong>Stochastic Processes</strong><br>
+      Summer Internship, Saha Institute of Nuclear Physics (2018)<br>
+      Supervisor: Prof. Pradeep Kumar Mohanty
+    </li>
+  </ul>
+</section>
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-        </script>
-    </head>
-    
-    
-    <body>
+<footer>
+  © 2026 Shuvadip Dutta
+</footer>
 
-    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-    <script src="js/bootstrap.js"></script>
-        
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Shuvadip Dutta</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-  
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Personal Details</a>
-                </li>
-                 <li class="nav-item active">
-                    <a class="nav-link" href="research.html">Research</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="teaching.html">Teaching Experience</a>
-                </li>
-               
-            </ul>
-        </div>
-    </nav>
-
-
-        <section id="color1">
-        <h1 id="section2" class="tab">Research</h1>
-
-	
-
-       
-
-	  <h4 class="titles">Spatial Organisation of Chromatin and Dynamics of Transcription Factors</h4>
-        
-
-	 <div class="col-lg-12 col-sm-12">
-                <p class="big">
-                  Transcription factors (TF) are proteins that bind to a target site on chromatin and orchestrate transcription. We try to model the interphase chromatin as a network where each bead of the simulated polymer acts as a node and the TF as an unbiased random walker, hopping to other nodes in the neighborhood. From existing literature on the network, it is known that the mean first passage time (MFPT) of a random walker between any two nodes on a general network follows a set of particular scaling laws.
-                <p/>
-
-	</div>       
-   
-        
-       
-
-        <div class="col-lg-12 col-sm-12">
-                <p class="big">
-                <li> Our main goal is to verify whether the MFPT scaling law (for a network) holds in the chromatin context, i.e., the possibility of characterizing the MFPT of a TF based on walk dimension and fractal dimension of chromatin mesh.</li>
-
-		<li>The biologically relevant question is, if a TF is stuck inside a wrong TAD (chromatin mesh with no target site), how long it would take to come out of it. In other words, we are trying to figure out the dependence of mean exit time from a TAD on the size of the domain (radius of gyration) and structure of this domain.</li>
-
-		<li>It is now well accepted that chromatin are dynamic polymers. This dynamic nature arises due to the tethering of chromatin to the nuclear lamina, the interplay of interactions with various proteins, and the dynamic loop extrusion process via cohesin.Previous works show that the performance of a random walker (walking on polymer) is increased if the polymer has its dynamics. The mean square displacement of a random walker along a static polymer shows only diffusive behavior, whereas polymer dynamics can make the walk superdiffusive. It will be interesting to see whether chromatin dynamics can reduce the TF's mean target search time (or mean exit time from a TAD).</li>
-                <p/>
-
-	</div>
-
-
-	 <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-        <img src="fpt.png" class="rounded float-start" class="center" alt="exit times" width="1200" style="padding-right: 50px; padding left: 50px; padding top: 200px; padding bottom: 200px;">
-                </div>
-                </div>
-            </div>
-        </div>
-
-
-	<div class="col-lg-12 col-sm-12">
-                <p class="big">
-                <li>Effect of collapsed structure: Chromatin is a collapsed polymer and it makes frequent contact with itself. TF can jump to distant loci if there are contacts between far-away loci. We constructed an artificial domain where each locus is making contacts with other loci with a constant probability. Mean exit time from the domain for a random walker shows a non-monotonic behavior. If the contact probability is small, the walk is only along the 1D chain and can not hop to distant loci. Again, if contact probability is very high, there are too many contacts for each locus and the walker takes more time to reach the domain boundary.</li>
-
-		<li>Exit time analysis: We constructed an ensemble of connectivity matrices (C<sub>ij</sub>) (with entries 1 and 0) for a region on human chromosome 7 according to the available Hi-C contact matrix. A random walker was allowed to walk on the network following the connectivity matrix (i.e. only if C<sub>ij</sub>=1, jump is allowed between i and j ). The chosen region consists a TAD and we calculated exit time distribution. Simulation have shown that total mean exit time from a bigger domain is less than sum of mean exit times from the sub-domains.</li>
-
-		<li>Exit time scaling: We collected more TAD structures from the Hi-C map in order to find out a proper scaling of mean exit times with TAD lengths.</li>
-
-		<li>Finite-size of the TAD: As discussed earlier, Our goal is to calculate mean exit time scaling with the size of the domain. However, the actual TAD size varies in the range 0.5Mbp to 2Mbp. Hence, getting a scaling law remains a challenge with the available data.</li>
-                <p/>
-
-	</div>
-
-	 <hr style="border: 1px solid #000000;" />
-
-
- <h4 class="titles">Investigating the role of Lamin interactions in regulating chromatin organisation</h4>
-        
-
-	 <div class="col-lg-12 col-sm-12">
-                <p class="big">
-                 Lamins are principal nucleoskeletal proteins of all mammalian cells, which impart rigidity to nuclear morphology and ensure the resilience
-of the nucleus by forming filamentous meshwork under the inner nuclear membrane, called nuclear lamina. Over the recent years,
-mutations in lamins have been found to cause a cluster of human diseases, collectively termed laminopathies (e.g., dilated cardiomyopathy
-(DCM), Hutchinson–Gilford progeria syndrome etc.). One of the significant features of such mutations is the abrupt disappearance
-of the nuclear lamina and the formation of multiple lamin aggregates in the nucleoplasm. In this study, we perform coarse-grained
-simulations (using LAMMPS) of a small region near the membrane of the nucleus to investigate the role of interactions between different
-nuclear components (chromatin, lamin and nuclear membrane) in WT cells and possible changes in those interactions which can lead to
-a mutant configurations.
-                <p/>
-
-	</div>       
-   
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-        <img src="lamin.png" class="rounded float-start" alt="recombination" width="1000" style="padding-right: 50px; padding left: 50px; padding top: 3000px; padding bottom: 200px;">
-             
-            </div>
-        </div>
-
-
-
-
-       
-	 <hr style="border: 1px solid #000000;" />
-
-
-	<h4 class="titles">Improved chromatin models using systematic coarse-graining data</h4>
-        
-
-	 <div class="col-lg-12 col-sm-12">
-                <p class="big">
-                  Coarse-grained chromatin models are essential to interpret various experimental observations and predicting physical principles behind
-chromatin organization. Most existing polymer models consider chromatin as an array of beads connected by springs. Each bead
-represents chromatin segments of genomic length 1 kbp to 1 Mbp (depending on the context). Models also assume various polymer
-properties as input, such as the spring constant of the connecting spring between beads, bending rigidity, coarse-grained bead sizes,
-equilibrium bond lengths between neighboring beads, equilibrium angles between three consecutive beads etc. In a recent study, using
-extensive simulations, we have predicted these quantities essential for the polymer representation of chromatin.
-                <p/>
-
-	</div>       
-   
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-        <img src="microc.png" class="rounded float-start" alt="recombination" width="1200" style="padding-right: 50px; padding left: 50px; padding top: 3000px; padding bottom: 200px;">
-                </div>
-              
-            </div>
-        </div>
-
-
-
-
-        <div class="col-lg-12 col-sm-12">
-               
-
-Modeling chromatin as a FRC polymer
-Using the distribution of bond angles and bond lengths from systematic coarse-graining, we ask whether chromatin-like polymer config-
-urations can be generated by incorporating these coarse-grained parameters into simple polymer models. We construct a freely rotating
-chain (FRC) polymer using these parameters. We show that while it is possible to generate TAD-like domains as seen from the FRC
-model, and also the average 3D distance between the same genomic loci matches with experimentally observed values, there is a significant
-deviation of the scaling of the radius of gyration with the genomic length for this FRC polymer from experimentally observed data. This
-disagreement indicates that “only” heterogeneous bond lengths and angles are not sufficient to model chromatin segments, and we must
-construct polymer models incorporating the effects of soft interaction potential and sequence heterogeneity
-                <p/>
-
-	</div>
-
-	 <hr style="border: 1px solid #000000;" />
-
-
-
-
-
-
-        </section>
-
-
-
-	  <section id="color1">
-        <h1 id="section4" class="longtab">Past Research Experience</h1>
-                
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>MSc Thesis</h5>
-                <h6><b>IIT Madras (July 2018-May 2019)</b></h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a class="link" href="https://drive.google.com/file/d/15KDDnUafxvt8cGM2ObnpQaTfalSgh1U3/view?usp=sharing"><h5>Run and Tumble walk of E.coli : Impact of signalling
-
-noise on random motility</h5></a>
-                  <b>Supervisor:</b> <a class="link" href="https://physics.iitm.ac.in/manojgopal">Prof. Manoj Gopalakrishnan</a>
-                </div>
-            </div>
-        </div>
-        
-        
-        <hr style="border: 2px solid #f2f2f2;" />
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>Summer Internship</h5>
-                <h6><b>SINP Kolkata (May 2018-July 2018)</b></h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a class="link" href="https://drive.google.com/file/d/19UPBZMwgs97OMMRDFj9O-1CQUySaXarQ/view?usp=sharing"><h5>A Short Study on Stochastic Processes</h5></a>
-                  <b>Supervisor:</b> <a class="link" href="http://saha.ac.in/web/tcmpd-personal-page?mid=97&tab=tab1">Prof. Pradeep Kr. Mohanty</a>
-                </div>
-            </div>
-        </div>
-        
-        
-        </section>
-        
-         <section id="color1">
-        <h1 id="section8" class="longtab">Course Projects</h1>
-                
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>PH 549:Physics of Biological Systems</h5>
-                <h6>IIT Bombay (2020)</h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a class="link" href="https://drive.google.com/file/d/1nNMm8O43jmLlnzyQFxkEQ4oNWotLPUaS/view?usp=sharing"><h5>Organelle biogenesis processes and cell to cell variability of organelle</h5></a>
-                </div>
-            </div>
-        </div>
-        
-        <hr style="border: 2px solid #f2f2f2;" />
-         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>PH 567:Non-linear Dynamics</h5>
-                <h6>IIT Bombay (2020)</h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a class="link" href="https://drive.google.com/file/d/12Ho1QXNYMQ5RRYxfpT5MWZX1n4qijj_p/view?usp=sharing"><h5>Pattern formation in reaction-diffusion models with
-spatially inhomogeneous diffusion coefficient</h5></a>
-                </div>
-            </div>
-        </div>
-
- <hr style="border: 2px solid #f2f2f2;" />
-         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>PH 543:Advanced Statistical Mechanics</h5>
-                <h6>IIT Bombay (2020)</h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a class="link" href="https://drive.google.com/file/d/1LKurajUjFghWnMLK_ZviKFdwPvvrvqdy/view?usp=sharing"><h5>Series expansion method and duality transformation</h5></a>
-                </div>
-            </div>
-        </div>
-        
-        </section>
-        
-        
-        <section id="color3">
-    <div class="footer-copyright text-center py-3">Copyright © 2021 :
-      <a href="https://shuvadipd.github.io"> Shuvadip Dutta.</a>All rights reserved.
-    </div>
-        </section>
-        
-        
-        
-    </body>
+</body>
 </html>
-
