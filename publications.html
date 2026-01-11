@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Publications | Shuvadip Dutta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+body {
+  background: #0b1020;
+}
+
+.pub-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 4rem 1.5rem;
+}
+
+.pub-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pub-header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.pub-meta-links {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.pub-meta-links a {
+  color: #4cc3ff;
+  text-decoration: none;
+  margin: 0 0.6rem;
+  font-weight: 600;
+}
+
+.pub-meta-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Publication cards ---------- */
+
+.pub-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 1.6rem 1.8rem;
+  margin-bottom: 1.4rem;
+  color: #e6e8f0;
+}
+
+.pub-year {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #aab0d6;
+  margin-bottom: 0.4rem;
+}
+
+.pub-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pub-authors {
+  font-size: 0.95rem;
+  color: #d1d5f0;
+  margin-bottom: 0.35rem;
+}
+
+.pub-journal {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #aab0d6;
+}
+
+.status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7dd3fc;
+  margin-left: 0.4rem;
+}
+
+.equal-note {
+  font-size: 0.8rem;
+  color: #aab0d6;
+  margin: 0.25rem 0 0.35rem;
+}
+
+/* ---------- Floating DOI ---------- */
+
+.pub-link-float {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-size: 0.95rem;
+  color: #4cc3ff;
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+.pub-link-float:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* ---------- Tooltip ---------- */
+
+.pub-link-float::after {
+  content: "View DOI";
+  position: absolute;
+  top: -1.8rem;
+  right: 0;
+  background: rgba(15, 23, 42, 0.95);
+  color: #e6e8f0;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.45rem;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.pub-link-float:hover::after {
+  opacity: 1;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="talks.html">Talks</a>
+<a href="teaching.html">Teaching</a>
+<a href="cv.html">CV</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<div class="pub-container">
+
+<div class="pub-header">
+<h1>Publications</h1>
+
+<div class="pub-meta-links">
+<a href="https://scholar.google.com/citations?user=aFAHbBEAAAAJ">Google Scholar</a> |
+<a href="https://www.researchgate.net/profile/Shuvadip-Dutta">ResearchGate</a> |
+<a href="https://orcid.org/">ORCID</a>
+</div>
+</div>
+
+<!-- ================= 2026 ================= -->
+
+<div class="pub-card">
+<a href="#" class="pub-link-float"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+<div class="pub-year">2026</div>
+<div class="pub-title">Compaction of Chromatin Domains Regulates Target Search Times of Proteins</div>
+<div class="pub-authors"><strong>S. Dutta</strong>, Adarshkrishnan R., R. Padinhateeri, M. K. Mitra</div>
+<div class="pub-journal">PLOS Computational Biology <span class="status">(accepted)</span></div>
+</div>
+
+<div class="pub-card">
+<a href="#" class="pub-link-float"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+<div class="pub-year">2026</div>
+<div class="pub-title">Polymer Simulations of Chromatin: Connecting 3D Organization and Dynamics to Function</div>
+<div class="pub-authors"><strong>S. Dutta</strong>, R. Padinhateeri</div>
+<div class="pub-journal">Current Opinion in Genetics &amp; Development <span class="status">(accepted)</span></div>
+</div>
+
+<!-- ================= 2025 ================= -->
+
+<div class="pub-card">
+<a href="https://doi.org/10.1101/2025.08.11.669613" class="pub-link-float">
+<i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+<div class="pub-year">2025</div>
+<div class="pub-title">
+Predicting statistics of gene translocation events: role of chromatin compaction and double-strand DNA break
+</div>
+<div class="pub-authors">
+A. Jairam<sup>†</sup>, <strong>S. Dutta</strong><sup>†</sup>, S. Kadam, K. Kumari, R. Padinhateeri
+</div>
+<div class="equal-note"><sup>†</sup> equal contribution.</div>
+<div class="pub-journal">bioRxiv <span class="status">(under review)</span></div>
+</div>
+
+<div class="pub-card">
+<a href="https://doi.org/10.1073/pnas.2520310122" class="pub-link-float">
+<i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+<div class="pub-year">2025</div>
+<div class="pub-title">
+Organization principles of dynamic three-dimensional genome architecture associated with centromere clustering states
+</div>
+<div class="pub-authors">
+S. D. Polisetty, <strong>S. Dutta</strong>, R. N. Vadnala, D. Nontari, R. Padinhateeri, K. Sanyal
+</div>
+<div class="pub-journal">
+Proceedings of the National Academy of Sciences <strong>122</strong> (50), e2520310122
+</div>
+</div>
+
+<div class="pub-card">
+<a href="https://doi.org/10.1007/978-3-032-00537-3_9" class="pub-link-float">
+<i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+<div class="pub-year">2025</div>
+<div class="pub-title">
+The Role of Lamins in Genome Organisation: A Modelling Perspective
+</div>
+<div class="pub-authors"><strong>S. Dutta</strong>, M. K. Mitra</div>
+<div class="pub-journal">
+Lamins in Genome Organization and Diseases, Subcellular Biochemistry,
+vol. 115, Springer, pp. 201–224
+</div>
+</div>
+
+<div class="pub-card">
+<a href="https://doi.org/10.1093/nar/gkaf615" class="pub-link-float">
+<i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+<div class="pub-year">2025</div>
+<div class="pub-title">
+Liquid–liquid phase separation of lamin drives altered chromatin organization in cardiomyopathic mutations of lamin A
+</div>
+<div class="pub-authors">
+S. Nath<sup>†</sup>, <strong>S. Dutta</strong><sup>†</sup>, S. D. Sarkar<sup>†</sup>,
+D. Sengupta, M. K. Mitra, K. Sengupta
+</div>
+<div class="equal-note"><sup>†</sup> equal contribution.</div>
+<div class="pub-journal">Nucleic Acids Research <strong>53</strong> (14), gkaf615</div>
+</div>
+
+<!-- ================= 2023 ================= -->
+
+<div class="pub-card">
+<a href="https://doi.org/10.1038/s41467-023-39907-2" class="pub-link-float">
+<i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+<div class="pub-year">2023</div>
+<div class="pub-title">
+Predicting scale-dependent chromatin polymer properties from systematic coarse-graining
+</div>
+<div class="pub-authors">
+S. Kadam, K. Kumari, V. Manivannan, <strong>S. Dutta</strong>,
+M. K. Mitra, R. Padinhateeri
+</div>
+<div class="pub-journal">Nature Communications <strong>14</strong> (1), 4108</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 Shuvadip Dutta
+</footer>
+
+</body>
+</html>
