@@ -1,344 +1,78 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Shuvadip Dutta</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shuvadip Dutta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+<body>
 
-              // Store hash
-            var hash = this.hash;
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="talks.html">Talks</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-   
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-            });
-            } // End if
-            });
-            });
-            
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
+<section class="hero">
+  <div>
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-        </script>
-    </head>
-    
-    
-    <body>
-
-    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-    <script src="js/bootstrap.js"></script>
-        
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Shuvadip Dutta</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-  
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Personal Details</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="research.html">Research</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="teaching.html">Teaching Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section9">Achievements</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
-          <h1 id="section1" class="tab">About Me</h1>
-        <section id="color2">
-      
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-        <img src="shuvadipdutta.png" class="rounded float-left" alt="shuvadip" width="170">
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <ul class="info">
-                      <li><b>Name        :</b> Shuvadip Dutta</li>
-                      <li><b>Nationality :</b> Indian</li>
-                      <li><b>Phone       :</b> +91 8777642952</li>
-                      <li><b>Email       :</b> shuvadipdutta@gmail.com</li>
-                    </ul> 
-                </div>
-                <div class="col-lg-5 col-sm-12">
-                <p class="big">
-                   I am a student at the Department of Physics, Indian Institue of Technology Bombay. My research interest is Biophysics and the objective is to explain Biological phenomena happening inside cells using tools from Physics. My work involves theoretical modeling as well as extensive computer simulations. My current research work looks into the three-dimensional organization of chromatin inside cells and the nature of dynamics of transcription factors.
-                <p/>
-                </div>
-            </div>
-        </div>
-        </section>
-        
-        
-        <section id="color1">
-        <h1 id="section3" class="tab">My timeline</h1>
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>2020-Current</h5>
-                <h6>Research Fellow</h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a class="link" href="http://www.iitb.ac.in"><h5>Indian Institute of Technology Bombay</h5></a>
-                  <a class="link" href="https://www.phy.iitb.ac.in/"><h5>Department of Physics</h5></a>
-                   <b>Supervisors:</b> <a class="link" href="https://www.phy.iitb.ac.in/en/faculty/mithun">Prof. Mithun Kumar Mitra, </a> <a class="link" href="https://www.bio.iitb.ac.in/~ranjith/">Prof. Ranjith Padinhateeri </a>
-                </div>
-            </div>
-        </div>
-        
-        
-        <hr style="border: 2px solid #f2f2f2;" />
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>2017-2019</h5>
-                <h6>MSc in Physics</h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a class="link" href="https://www.iitm.ac.in/"><h5>Indian Institute of Technology Madras</h5></a>
-                  <a class="link" href="https://physics.iitm.ac.in/"><h5>Department of Physics</h5></a>
-                </div>
-            </div>
-        </div>
-            
-            
-        <hr style="border: 2px solid #f2f2f2;" />
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>2014-2017</h5>
-                <h6>BSc(H) in Physics</h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a class="link" href="http://vidyamandira.ac.in/"><h5>Ramakrishna Mission Vidyamandira, Belur math</h5></a>
-                    <a>Department of Physics</a>
-                </div>
-            </div>
-        </div>
-        
-        <hr style="border: 2px solid #f2f2f2;" />
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>2012-2014</h5>
-                <h6>Higher Secondary</h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <h5>Mahesh Sri Ramakrishna Ashram Vidyalaya</h5>
-                  
-                </div>
-            </div>
-        </div>
-        
-        
-        <hr style="border: 2px solid #f2f2f2;" />
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>1999-2012</h5>
-                <h6>Secondary</h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <h5>Mahesh Sri Ramakrishna Ashram Vidyalaya</h5>
-                </div>
-            </div>
-        </div>
-        </section>
-          
-        
-      
-        
-        
-        
-                
-        <section id="color2">
-        <h1 id="section6" class="tab">Skills</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                <h4>Programming Skills</h4>
-                    <ul class="info">
-                        <li>C (Full Professional Proficiency)</li>
-			<li>R (Limited Working Proficiency)</li>
-			<li>HTML (Limited Working Proficiency)</li>
-			<li>Python (Elementary Proficiency)</li>
-                    </ul> 
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                <h4>Simulation Skills</h4>
-                    <ul class="info">
-                      <li>Monte Carlo</li>
-                      <li>Kinetic Monte Carlo</li>
-                      <li>Langevin dynamics</li>
-                    </ul> 
-                </div>
-                 <div class="col-lg-6 col-sm-6">
-                 <h4>Software Knowledge</h4>
-                    <ul class="info">
-                      <li>Mathematica, Matlab, LAMMPS,</li>
-                      <li>VMD, Jmol, Ovito</li>
-                    </ul> 
-                </div>
-		 <div class="col-lg-6 col-sm-6">
-                 <h4>Scripting Language</h4>
-                    <ul class="info">
-                      <li>Bash</li>
-                    </ul> 
-                </div>
-
-            </div>
-        </div>
-        </section>
-        
-        
-         <section id="color1">
-        <h1 id="section7" class="longtab">Courses(after MSc)</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                <h4>In IIT Bombay</h4>
-                    <ul class="info">
-			<li>PH 543:Advanced Statistical Mechanics(2020)</li>
-                        <li>PH 549:Physics of Biological Systems(2020)</li>
-                        <li>PH 543:Advanced Statistical Mechanics(2020)</li>
-                        <li>PH 567:Non-linear Dynamics(2020)</li>
-                        <li>PH 550:Soft Matter Physics(2020)</li>
-                        <li>PH 562:Continuum Mechanics(2020)</li>
-                    </ul> 
-                </div>
-               
-                 <div class="col-lg-6 col-sm-6">
-                 <h4>Other than IITB courses</h4>
-                    <ul class="info">
-                      <li>Using Python for Research(2021, Online course via edx)</li>
-                      <li>Introduction to Linux(2021, Online course via edx)</li>
-                    </ul> 
-                </div>
-            </div>
-        </div>
-        </section>
-        
-       
-        
-          <section id="color2">
-        <h1 id="section9" class="tab">Achievements</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                    <ul class="info">
-                        <li><a class="link" href="https://may2021.pmrf.in/"><h5>Prime Minister's Research Fellowship (2021)</h5></a></li>
-                         <li><a class="link" href="https://online-inspire.gov.in/"><h5>PhD Fellowship offer from DST-INSPIRE(2019)</h5></a></li>
-                         <li><a class="link" href="https://online-inspire.gov.in/"><h5>DST INSPIRE Scholar (2014-19)</h5></a></li>
-                        <li><a class="link" href="https://www.iapt.org.in/exams/nse/ngpe.html"><h5>National Graduate Physics Examination (by IAPT) - National Top-25 (2017)</h5></a></li>
-                         <li><a class="link" href="https://ncert.nic.in/national-talent-examination.php"><h5>NTSE Scholar (by NCERT) (2010)</h5></a></li>
-                        
-                        
-                    </ul> 
-                </div>
-            </div>
-        </div>
-        </section>
-        
-        
-        
-                
-        <section id="color1">
-        <h1 id="section10" class="tab">Contact</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                <h4>Address</h4>
-                   <p class="big">
-                         <li>Physical Biology Lab (Ranjith Lab)</li>
-                         306, Department of Bioscience and Bioengineering,
-                         Indian Institute of Technology Bombay,
-                         Powai, Mumbai 400 076, Maharashtra, India
-                   <p/>
-
-
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                <h4>Phone</h4>
-                  +91 8777642952
-                </div>
-            </div>
-        </div>
-            
-        <hr style="border: 2px solid #f2f2f2;" />
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                <h4>Email</h4>
-                  <a href="mailto:shuvadipdutta@gmail.com" target="_top">shuvadipdutta@gmail.com</a> <br />
-                  <a href="mailto:194120015@iitb.ac.in" target="_top">194120015@iitb.ac.in</a>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                <h4>I am also on social networks</h4>
-<!-- Add font awesome icons -->
-                <a href="https://www.facebook.com/shuvadip.dutta.7/" class="fa fa-facebook"></a>
-                <a href="https://mobile.twitter.com/DuttaShuvadip" class="fa fa-twitter"></a>
-                <a href="https://www.linkedin.com/in/shuvadip-dutta-693912a9/" class="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/itshuvadip/" class="fa fa-instagram"></a>
-                </div>
-            </div>
-        </div>
-        <hr style="border: 2px solid #f2f2f2;" />
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5330.790515172766!2d72.9134066123854!3d19.13229006439018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68fdcea4c5c5894e!2sIndian+Institute+of+Technology+Bombay!5e0!3m2!1sen!2sin!4v1530867751597" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-   
-        </section>
-  
-        
-        <section id="color3">
-    <div class="footer-copyright text-center py-3">Copyright © 2021 :
-      <a href="https://shuvadipd.github.io"> Shuvadip Dutta.</a>All rights reserved.
+    <!-- Profile Photo -->
+    <div class="profile-photo">
+      <img src="assets/shuvadipdutta.png" alt="Shuvadip Dutta">
     </div>
-        </section>
-        
-        
-        
-    </body>
+
+    <h1>Shuvadip Dutta</h1>
+    <p>
+      Research Fellow at IIT Bombay working on chromatin organisation,
+      polymer physics, and computational biophysics.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="research.html" class="btn">View Research</a>
+      <a href="cv.html" class="btn outline">Download CV</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-soft">
+  <h2>Research Focus</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Chromatin Architecture</h3>
+      <p>
+        Three-dimensional organisation of chromatin across cell-cycle
+        stages and disease conditions.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Protein Dynamics</h3>
+      <p>
+        Dynamics of transcription factors and DNA repair proteins
+        in complex nuclear environments.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Polymer Modelling</h3>
+      <p>
+        Coarse-grained polymer models, Monte Carlo and Langevin simulations.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Shuvadip Dutta
+</footer>
+
+</body>
 </html>
