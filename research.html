@@ -5,6 +5,81 @@
   <title>Research | Shuvadip Dutta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Research page layout */
+
+    .research-map {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin: 50px 0;
+      align-items: start;
+    }
+
+    .research-box {
+      padding: 10px 20px;
+    }
+
+    .research-box h3 {
+      margin-top: 0;
+    }
+
+    .research-image {
+      grid-column: 1 / 3;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .research-image img {
+      width: 75%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .figure-caption {
+      max-width: 850px;
+      margin: 12px auto 0;
+      font-size: 0.9em;
+      text-align: center;
+    }
+
+    .research-question {
+      font-style: italic;
+    }
+
+    .key-finding {
+      margin-top: 15px;
+    }
+
+    .research-publication {
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 800px) {
+
+      .research-map {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .research-image {
+        grid-column: 1;
+        grid-row: 3;
+      }
+
+      .research-image img {
+        width: 100%;
+      }
+
+      .research-box {
+        padding: 5px 0;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
@@ -21,9 +96,13 @@
   </nav>
 </header>
 
+
 <section>
 
   <h1>Research</h1>
+
+
+  <!-- Research overview -->
 
   <h2>Research Overview</h2>
 
@@ -32,8 +111,8 @@
     metres long when extended, it is compacted into a nucleus only a few
     micrometres in size. This three-dimensional organisation influences how
     proteins find their targets, how chromosomes interact with their nuclear
-    environment, and how the genome responds to damage and changes during the
-    cell cycle.
+    environment, and how the genome responds to damage and changes during
+    the cell cycle.
   </p>
 
   <p>
@@ -50,18 +129,26 @@
   </p>
 
 
-  <img src="my_research.png"
-       alt="Multiscale research on genome organisation"
-       class="research-figure">
+  <!-- Multiscale figure -->
 
-  <p class="figure-caption">
-    <strong>Figure 1.</strong> Multiscale physical modelling of genome
-    organisation. My research investigates chromatin organisation across
-    multiple biological length scales, from individual chromatin segments
-    and domains to chromosomes and the whole genome, integrating experimental
-    data with theory and computational modelling.
-  </p>
+  <div class="research-image">
 
+    <img src="my_research.png"
+         alt="Multiscale research on genome organisation">
+
+    <p class="figure-caption">
+      <strong>Figure 1.</strong>
+      Multiscale physical modelling of genome organisation. My research
+      investigates chromatin organisation across multiple biological length
+      scales, from individual chromatin segments and domains to chromosomes
+      and the whole genome, integrating experimental data with theory and
+      computational modelling.
+    </p>
+
+  </div>
+
+
+  <!-- PhD research -->
 
   <h2>PhD Research</h2>
 
@@ -75,170 +162,241 @@
   </p>
 
 
-  <h3>1. Chromatin Organisation and DNA Rearrangements</h3>
+  <!-- Four research projects -->
 
-  <p>
-    <strong>How does chromatin organisation influence the outcome of DNA
-    breaks?</strong>
-  </p>
-
-  <p>
-    DNA double-strand breaks can lead to chromosomal rearrangements and
-    translocations, but the physical factors determining which genomic
-    regions exchange positions remain poorly understood. Using Monte Carlo
-    simulations of chromatin at different packing densities, I investigated
-    how chromatin organisation affects translocation probability.
-  </p>
-
-  <p>
-    I found that translocation probability is not determined by contact
-    frequency alone. Instead, the overall packing of chromatin and
-    interactions involving multiple genomic segments play important roles in
-    determining whether two DNA segments undergo a rearrangement. I further
-    derived a theoretical framework for predicting translocation probabilities
-    from chromosome contact probabilities obtained from Hi-C data.
-  </p>
-
-  <p>
-    <strong>Key finding:</strong> Contact frequency alone does not fully
-    determine translocation probability; chromatin packing and multi-body
-    interactions provide additional structural information.
-  </p>
-
-  <p>
-    <strong>Publication:</strong>
-    Jairam et al., <em>Physical Review E</em> (2026)
-  </p>
+  <div class="research-map">
 
 
-  <h3>2. Chromatin Folding and Protein Target Search</h3>
+    <!-- 01 -->
 
-  <p>
-    <strong>How does the 3D folding of chromatin affect the ability of
-    proteins to find their target sites?</strong>
-  </p>
+    <div class="research-box">
 
-  <p>
-    DNA-binding proteins must locate specific target sequences within a
-    highly crowded and dynamically organised genome. I investigated how
-    chromatin folding influences this search process using polymer models,
-    theoretical analysis, computational simulations, and chromosome
-    contact-map data.
-  </p>
+      <h3>01. Chromatin Organisation and DNA Rearrangements</h3>
 
-  <p>
-    I found that chromatin domains exhibit a biophysical "sweet spot" of
-    compaction that minimises the average target-search time. Moderate
-    compaction enhances intersegmental jumps, allowing proteins to efficiently
-    transfer between nearby chromatin segments. However, excessive
-    compaction can hinder exploration and increase the likelihood of proteins
-    becoming trapped within dense chromatin regions.
-  </p>
+      <p class="research-question">
+        <strong>
+          How does chromatin organisation influence the outcome of DNA
+          breaks?
+        </strong>
+      </p>
 
-  <p>
-    <strong>Key finding:</strong> An intermediate degree of chromatin
-    compaction can optimise protein target search by balancing intersegmental
-    exploration and molecular trapping.
-  </p>
+      <p>
+        DNA double-strand breaks can lead to chromosomal rearrangements and
+        translocations, but the physical factors determining which genomic
+        regions exchange positions remain poorly understood. Using Monte
+        Carlo simulations of chromatin at different packing densities,
+        I investigated how chromatin organisation affects translocation
+        probability.
+      </p>
 
-  <p>
-    <strong>Publication:</strong>
-    Dutta et al., <em>PLoS Computational Biology</em> (2026)
-  </p>
+      <p>
+        I found that translocation probability is not determined by contact
+        frequency alone. Instead, the overall packing of chromatin and
+        interactions involving multiple genomic segments play important
+        roles in determining whether two DNA segments undergo a
+        rearrangement. I further derived a theoretical framework for
+        predicting translocation probabilities from chromosome contact
+        probabilities obtained from Hi-C data.
+      </p>
 
+      <p class="key-finding">
+        <strong>Key finding:</strong>
+        Contact frequency alone does not fully determine translocation
+        probability; chromatin packing and multi-body interactions provide
+        additional structural information.
+      </p>
 
-  <h3>3. Nuclear Lamins and Chromosome Organisation</h3>
+      <p class="research-publication">
+        <strong>Publication:</strong><br>
+        Jairam et al., <em>Physical Review E</em> (2026)
+      </p>
 
-  <p>
-    <strong>How does the nuclear lamina shape chromosome organisation and
-    dynamics?</strong>
-  </p>
-
-  <p>
-    The nuclear lamina forms a dynamic structural network at the nuclear
-    periphery and plays an important role in organising chromatin. Mutations
-    in lamin proteins are associated with a range of human diseases known as
-    laminopathies. I developed coarse-grained polymer models that explicitly
-    describe interactions between chromatin and dynamic lamin proteins.
-  </p>
-
-  <p>
-    By constraining and validating the models against experimental microscopy
-    data, I investigated how changes in lamin organisation influence
-    chromosome positioning and nuclear architecture. The simulations revealed
-    how pathological lamin mutations can reorganise the lamin network, alter
-    chromosome positioning, and change lamin dynamics.
-  </p>
-
-  <p>
-    <strong>Key finding:</strong> Changes in lamin organisation can propagate
-    to chromosome-scale architecture and dynamics.
-  </p>
-
-  <p>
-    <strong>Publications:</strong><br>
-    Dutta &amp; Mitra, <em>Subcellular Biochemistry</em> (2025)<br>
-    Nath et al., <em>Nucleic Acids Research</em> (2025)
-  </p>
+    </div>
 
 
-  <h3>4. Whole-Genome Organisation and the Cell Cycle</h3>
+    <!-- 02 -->
 
-  <p>
-    <strong>How does 3D genome organisation change as a cell progresses
-    through the cell cycle?</strong>
-  </p>
+    <div class="research-box">
 
-  <p>
-    Chromatin architecture is dynamic and undergoes dramatic reorganisation
-    during the cell cycle. Using a fungal model system, I integrated
-    microscopy, Hi-C data, and whole-genome polymer modelling to investigate
-    how chromosome organisation changes during cell-cycle progression.
-  </p>
+      <h3>02. Chromatin Folding and Protein Target Search</h3>
 
-  <p>
-    I showed that centromere clustering plays a central role in the unfolding
-    of centromeric regions during anaphase. I further investigated the
-    relationship between the three-dimensional positioning of genomic regions
-    and their replication timing, revealing a connection between genome
-    architecture and the temporal organisation of DNA replication.
-  </p>
+      <p class="research-question">
+        <strong>
+          How does the 3D folding of chromatin affect the ability of
+          proteins to find their target sites?
+        </strong>
+      </p>
 
-  <p>
-    <strong>Key finding:</strong> Cell-cycle-dependent genome organisation
-    emerges from coordinated changes in chromosome positioning and centromere
-    organisation.
-  </p>
+      <p>
+        DNA-binding proteins must locate specific target sequences within
+        a highly crowded and dynamically organised genome. I investigated
+        how chromatin folding influences this search process using polymer
+        models, theoretical analysis, computational simulations, and
+        chromosome contact-map data.
+      </p>
 
-  <p>
-    <strong>Publications:</strong><br>
-    Kadam et al., <em>Nature Communications</em> (2023)<br>
-    Polisetty et al., <em>PNAS</em> (2025)
-  </p>
+      <p>
+        I found that chromatin domains exhibit a biophysical "sweet spot"
+        of compaction that minimises the average target-search time.
+        Moderate compaction enhances intersegmental jumps, allowing
+        proteins to efficiently transfer between nearby chromatin segments.
+        However, excessive compaction can hinder exploration and increase
+        the likelihood of proteins becoming trapped within dense chromatin
+        regions.
+      </p>
 
+      <p class="key-finding">
+        <strong>Key finding:</strong>
+        An intermediate degree of chromatin compaction can optimise protein
+        target search by balancing intersegmental exploration and molecular
+        trapping.
+      </p>
+
+      <p class="research-publication">
+        <strong>Publication:</strong><br>
+        Dutta et al., <em>PLoS Computational Biology</em> (2026)
+      </p>
+
+    </div>
+
+
+    <!-- Centre figure -->
+
+    <div class="research-image">
+
+      <img src="my_research.png"
+           alt="Multiscale organisation of the genome">
+
+      <p class="figure-caption">
+        <strong>Multiscale organisation of the genome.</strong>
+        My research connects physical models of chromatin organisation
+        across scales, from local chromatin structure to the whole genome.
+      </p>
+
+    </div>
+
+
+    <!-- 03 -->
+
+    <div class="research-box">
+
+      <h3>03. Nuclear Lamins and Chromosome Organisation</h3>
+
+      <p class="research-question">
+        <strong>
+          How does the nuclear lamina shape chromosome organisation and
+          dynamics?
+        </strong>
+      </p>
+
+      <p>
+        The nuclear lamina forms a dynamic structural network at the
+        nuclear periphery and plays an important role in organising
+        chromatin. Mutations in lamin proteins are associated with a range
+        of human diseases known as laminopathies. I developed coarse-grained
+        polymer models that explicitly describe interactions between
+        chromatin and dynamic lamin proteins.
+      </p>
+
+      <p>
+        By constraining and validating the models against experimental
+        microscopy data, I investigated how changes in lamin organisation
+        influence chromosome positioning and nuclear architecture. The
+        simulations revealed how pathological lamin mutations can
+        reorganise the lamin network, alter chromosome positioning, and
+        change lamin dynamics.
+      </p>
+
+      <p class="key-finding">
+        <strong>Key finding:</strong>
+        Changes in lamin organisation can propagate to chromosome-scale
+        architecture and dynamics.
+      </p>
+
+      <p class="research-publication">
+        <strong>Publications:</strong><br>
+        Dutta &amp; Mitra, <em>Subcellular Biochemistry</em> (2025)<br>
+        Nath et al., <em>Nucleic Acids Research</em> (2025)
+      </p>
+
+    </div>
+
+
+    <!-- 04 -->
+
+    <div class="research-box">
+
+      <h3>04. Whole-Genome Organisation and the Cell Cycle</h3>
+
+      <p class="research-question">
+        <strong>
+          How does 3D genome organisation change as a cell progresses
+          through the cell cycle?
+        </strong>
+      </p>
+
+      <p>
+        Chromatin architecture is dynamic and undergoes dramatic
+        reorganisation during the cell cycle. Using a fungal model system,
+        I integrated microscopy, Hi-C data, and whole-genome polymer
+        modelling to investigate how chromosome organisation changes
+        during cell-cycle progression.
+      </p>
+
+      <p>
+        I showed that centromere clustering plays a central role in the
+        unfolding of centromeric regions during anaphase. I further
+        investigated the relationship between the three-dimensional
+        positioning of genomic regions and their replication timing,
+        revealing a connection between genome architecture and the temporal
+        organisation of DNA replication.
+      </p>
+
+      <p class="key-finding">
+        <strong>Key finding:</strong>
+        Cell-cycle-dependent genome organisation emerges from coordinated
+        changes in chromosome positioning and centromere organisation.
+      </p>
+
+      <p class="research-publication">
+        <strong>Publications:</strong><br>
+        Kadam et al., <em>Nature Communications</em> (2023)<br>
+        Polisetty et al., <em>PNAS</em> (2025)
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Research philosophy -->
 
   <h2>Research Philosophy</h2>
 
   <p>
     Across these projects, I follow a common approach: experimental
-    observations are used to construct and constrain physical models, while
-    theory and simulation are used to uncover mechanisms that are difficult
-    to resolve experimentally.
+    observations are used to construct and constrain physical models,
+    while theory and simulation are used to uncover mechanisms that are
+    difficult to resolve experimentally.
   </p>
 
   <p>
     <strong>
-      Experimental data &rarr; Physical model &rarr; Theory &amp; simulation
-      &rarr; Mechanism &rarr; Biological function
+      Experimental data &rarr; Physical model &rarr;
+      Theory &amp; simulation &rarr; Mechanism &rarr;
+      Biological function
     </strong>
   </p>
 
   <p>
     By working across scales—from individual chromatin segments and domains
     to chromosomes and the whole genome—I aim to understand how the physical
-    organisation and dynamics of the genome give rise to biological function.
+    organisation and dynamics of the genome give rise to biological
+    function.
   </p>
 
+
+  <!-- Current research -->
 
   <h2>Current Research</h2>
 
@@ -254,9 +412,9 @@
   </p>
 
   <p>
-    I am developing experimentally constrained coarse-grained polymer models
-    of chromatin that incorporate genomic and epigenomic information to
-    represent biologically distinct chromatin states.
+    I am developing experimentally constrained coarse-grained polymer
+    models of chromatin that incorporate genomic and epigenomic information
+    to represent biologically distinct chromatin states.
   </p>
 
   <p>
@@ -266,30 +424,63 @@
   </p>
 
   <p>
-    A central question is whether changes in chromatin architecture can alter
-    the precision, efficiency, and robustness of genome regulation by
+    A central question is whether changes in chromatin architecture can
+    alter the precision, efficiency, and robustness of genome regulation by
     modifying the spatial search landscape experienced by regulatory
     proteins.
   </p>
 
 
+  <!-- Methods -->
+
   <h2>Approach and Methods</h2>
 
   <ul>
-    <li><strong>Polymer physics:</strong> Coarse-grained models of chromatin and chromosomes.</li>
-    <li><strong>Computational modelling:</strong> Monte Carlo, Langevin dynamics, and molecular dynamics simulations.</li>
-    <li><strong>Statistical physics:</strong> Scaling laws, contact probabilities, stochastic processes, and analytical theory.</li>
-    <li><strong>Genomic data:</strong> Hi-C and other chromosome conformation data.</li>
-    <li><strong>Microscopy:</strong> Integration of imaging data to study three-dimensional organisation and dynamics.</li>
-    <li><strong>Multiscale modelling:</strong> Connecting local chromatin interactions with chromosome- and genome-scale organisation.</li>
+    <li>
+      <strong>Polymer physics:</strong>
+      Coarse-grained models of chromatin and chromosomes.
+    </li>
+
+    <li>
+      <strong>Computational modelling:</strong>
+      Monte Carlo, Langevin dynamics, and molecular dynamics simulations.
+    </li>
+
+    <li>
+      <strong>Statistical physics:</strong>
+      Scaling laws, contact probabilities, stochastic processes, and
+      analytical theory.
+    </li>
+
+    <li>
+      <strong>Genomic data:</strong>
+      Hi-C and other chromosome conformation data.
+    </li>
+
+    <li>
+      <strong>Microscopy:</strong>
+      Integration of imaging data to study three-dimensional organisation
+      and dynamics.
+    </li>
+
+    <li>
+      <strong>Multiscale modelling:</strong>
+      Connecting local chromatin interactions with chromosome- and
+      genome-scale organisation.
+    </li>
   </ul>
 
+
+  <!-- Research experience -->
 
   <h2>Research Experience</h2>
 
   <ul>
+
     <li>
-      <strong>PhD in Physics — Indian Institute of Technology Bombay</strong><br>
+      <strong>
+        PhD in Physics — Indian Institute of Technology Bombay
+      </strong><br>
       2020–2026<br>
       Research on chromatin organisation, polymer physics, protein target
       search, nuclear lamina, genome organisation, and DNA rearrangements.<br>
@@ -297,21 +488,27 @@
     </li>
 
     <li>
-      <strong>MSc Thesis — Indian Institute of Technology Madras</strong><br>
+      <strong>
+        MSc Thesis — Indian Institute of Technology Madras
+      </strong><br>
       2018–2019<br>
       <em>Run-and-tumble dynamics of E. coli</em><br>
       Supervisor: Prof. Manoj Gopalakrishnan
     </li>
 
     <li>
-      <strong>Summer Research Internship — Saha Institute of Nuclear Physics</strong><br>
+      <strong>
+        Summer Research Internship — Saha Institute of Nuclear Physics
+      </strong><br>
       2018<br>
       Stochastic Processes<br>
       Supervisor: Prof. Pradeep Kumar Mohanty
     </li>
+
   </ul>
 
 </section>
+
 
 <footer>
   © 2026 Shuvadip Dutta
